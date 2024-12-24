@@ -161,11 +161,10 @@ header {
 /* Hero section */
 .hero-section {
     padding: 272px 0;
-    background-image: 
-        linear-gradient(
-            127deg, 
-            rgba(18, 18, 17, 0.78) 0%, 
-            rgba(18, 18, 17, 0.6) 63.89%, 
+    background-image:
+        linear-gradient(127deg,
+            rgba(18, 18, 17, 0.78) 0%,
+            rgba(18, 18, 17, 0.6) 63.89%,
             rgba(18, 18, 17, 0) 100%),
         url('../images/hero-section-background.jpg');
     background-repeat: no-repeat;
@@ -290,7 +289,7 @@ header {
     fill: var(--color-primary-light)
 }
 
-.carousel-button.next {
+.carousel-button {
     transform: rotate(180deg);
 }
 
@@ -514,13 +513,76 @@ header {
     width: 100%;
     max-width: 880px;
     height: 100%;
+    padding: 128px;
     max-height: 880px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
+    overflow: auto;
+    /* Для прогортування форми, яка не влазить у модальне вікно */
 }
 
 .modal-btn-close {
     position: absolute;
     top: 40px;
     right: 40px;
+}
+
+.modal-text {
+    margin-bottom: 72px;
+}
+
+/* Form */
+
+.form-field {
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.form-label {
+    position: absolute;
+    left: 42px;
+    top: 16px;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--color-secondary-dark);
+    transition: transform 0.3s;
+}
+
+.form-input:focus+.form-label {
+    transform: translate(-36px, -40px);
+    color: var(--color-primary-dark);
+}
+
+.form-input {
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    border-radius: 8px;
+    border: 1px solid var(--color-secondary-dark);
+    background-color: transparent;
+}
+
+.form-input:focus {
+    border-color: var(--color-brand-normal);
+    outline: none;
+}
+
+.form-button {
+    display: block;
+    margin: 0 auto 24px;
+}
+
+.form-terms {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 220px;
+}
+
+.form-terms-link {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
 }

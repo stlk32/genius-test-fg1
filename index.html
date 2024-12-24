@@ -110,7 +110,7 @@
                 <div class="formats-container">
                     <button class="carousel-button next" type="button">
                         <svg width="16" height="16">
-                            <use href="./images/arrow-left.svg"></use>
+                            <use href="./images/icons (1).svg#icon-arrow"></use>
                         </svg>
                     </button>
                     <ul class="formats-list">
@@ -150,7 +150,7 @@
                     </ul>
                     <button class="carousel-button" type="button">
                         <svg width="16" height="16">
-                            <use href="./images/arrow-right.svg"></use>
+                            <use href="./images/icons (1).svg#icon-arrow"></use>
                         </svg>
                     </button>
                 </div>
@@ -163,6 +163,26 @@
                         <h2 class="contacts-title section-title">Приєднуйся до
                             мережі пекарень</h2>
                         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+                        <form name="contact-form" autocomplete="off" novalidate>
+                            <div class="form-field">
+                                <input class="form-input" type="text" name="user-name" id="user-name">
+                                <label class="form-label" for="user-name">Ім’я</label>
+                            </div>
+                        
+                            <div class="form-field">
+                                <input class="form-input" type="tel" name="user-tel" id="user-tel">
+                                <label class="form-label" for="user-tel">Телефон</label>
+                            </div>
+                        
+                            <div class="form-field">
+                                <input class="form-input" type="email" name="user-email" id="user-email">
+                                <label class="form-label" for="user-email">Електронна пошта</label>
+                            </div>
+                        
+                            <button class="form-button button" type="submit">Замовити дзвінок</button>
+                            <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link" href="#">політикою
+                                    конфіденційності</a></p>
+                        </form>
                     </div>
                     <iframe class="contact-map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636304352796!2d30.488698376029017!3d50.45667757159337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1732918381898!5m2!1sru!2sua"
@@ -218,9 +238,30 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
         <div class="modal">
             <button class="modal-btn-close" type="button">Close</button>
+            <h2 class="modal-title">Замовити дзвінок</h2>
+            <p class="modal-text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+            <form name="contact-form" autocomplete="off" novalidate>
+                <div class="form-field">
+                    <input class="form-input" type="text" name="user-name" id="user-name">
+                    <label class="form-label" for="user-name">Ім’я</label>
+                </div>
+
+                <div class="form-field">
+                    <input class="form-input" type="tel" name="user-tel" id="user-tel">
+                    <label class="form-label" for="user-tel">Телефон</label>
+                </div>
+
+                <div class="form-field">
+                    <input class="form-input" type="email" name="user-email" id="user-email">
+                    <label class="form-label" for="user-email">Електронна пошта</label>
+                </div>
+
+                <button class="form-button button" type="submit">Замовити дзвінок</button>
+                <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link" href="#">політикою конфіденційності</a></p>
+            </form>
         </div>
     </div>
 
